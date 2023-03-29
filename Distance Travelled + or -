@@ -39,42 +39,17 @@ Output:
 
 Program: 
 
+def move_boy(n):
+    position = 0
+    for i in n:
+        if i=="+":
+            position += 1
+        else:
+            position -= 1 
+    return abs(position)        
+        
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+string = input().strip()
+print(move_boy(string))
 
 
