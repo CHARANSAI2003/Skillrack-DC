@@ -49,7 +49,6 @@ k,k2=0,0
 a1=[]
 for i in range(n):
     c=list(map(str,input().split()))
-    a=0
     a1.append(c)
     z1=c.count("a")
     z2=c.count("e")
@@ -63,7 +62,6 @@ for i in range(m):
     for j in range(n):
         c=a1[j][i]
         a.append(c)
-    a2=0
     z1=a.count("a")
     z2=a.count("e")
     z3=a.count("i")
