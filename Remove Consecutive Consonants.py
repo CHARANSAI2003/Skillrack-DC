@@ -35,3 +35,27 @@ docume
 
 Program:
 
+n=input().strip()
+m=""
+def isVowel(letter):
+    if letter=="a" or letter=="e" or letter=="i" or letter=="o" or letter=="u":
+        return True 
+    return False 
+prevVowel = True 
+for i in range(len(n)):
+    if isVowel(n[i]):
+        m+=n[i]
+        prevVowel=True 
+    else:
+        if not prevVowel:
+            continue 
+        if i+1==len(n):
+            m+=n[i]
+        else:
+            if isVowel(n[i+1]):
+                m+=n[i]
+                prevVowel=True 
+            else:
+                prevVowel=False
+print(m)                
+
