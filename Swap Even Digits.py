@@ -47,3 +47,48 @@ Output:
 
 Program:
 
+n=int(input())
+for i in range(n):
+    c=input().strip()
+    a=[]
+    even=0
+    odd=1
+    m=0
+    for j in c:
+        if int(j)%2==0:
+            a.append(j)
+    k=""      
+    if len(a)%2==0:
+        for j in c:
+            if int(j)%2==0:
+                if m%2!=0:
+                    k+=a[even]
+                    even+=2
+                else:
+                    k+=a[odd]
+                    odd+=2
+                m+=1
+            else:
+                k+=(j)
+    else:
+        a=a[:-1]
+        z=0
+        for j in c:
+            if len(a)==z:
+                k+=j
+            elif int(j)%2==0:
+                if m%2!=0:
+                    k+=a[even]
+                    even+=2
+                else:
+                    k+=a[odd]
+                    odd+=2
+                m+=1
+                z+=1
+            else:
+                k+=j
+                
+    print(int(k))            
+            
+        
+
