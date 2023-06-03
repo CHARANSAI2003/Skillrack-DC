@@ -20,3 +20,22 @@ Hence 1 4 6 is printed.
 
 Program:
 
+void removeIndices(int arr[], int M, int indices[], int N)
+{
+    int n=0;
+    int arr1[M];
+    for(int i=0;i<M;i++){
+        arr1[i]=0;
+    }
+    for(int i=0;i<N;i++){
+        if(indices[i]>=0 && indices[i]<=M){
+            arr1[indices[i]]=1;
+        }
+    }
+    for(int i=0;i<M;i++){
+        if(!arr1[i]){
+            arr[n++]=arr[i];
+        }
+    }
+    M=n;
+}
