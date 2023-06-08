@@ -50,5 +50,13 @@ Output:
 
 Program:
 
-
-
+a=int(input())
+for i in range(a):
+    c=list(map(int,input().split()))
+    b=[]
+    for j in c:
+        if int(str(j)[-1])!=0 and int(str(j))%int(str(j)[-1])==0:
+            b.append(len(str(j))"")
+        else:
+            b.append(j)
+    print(*b)
