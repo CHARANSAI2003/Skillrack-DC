@@ -34,3 +34,18 @@ Output:
 
 Program:
 
+n=input().strip()
+a="aeiou"
+c=0
+for i in n:
+    if i in a:
+        c+=1
+if c==0:
+    print("-1")
+else:
+    if c%2==0:
+        for i in range(1,len(n),2):
+            print(n[i],end="")
+    else:
+        for i in range(0,len(n),2):
+            print(n[i],end="")
