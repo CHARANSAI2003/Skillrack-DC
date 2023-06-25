@@ -1,0 +1,67 @@
+The program must accept an integer matrix of size NxN as the input. The program must replace the bottom-triangle part of the matrix by the water image of the top-triangle
+part of the matrix. The program must print the modified matrix as the output. Note: The value of N is always odd.
+
+Boundary Condition(s):
+3 <= N <= 49
+
+Input Format: 
+The first line contains N.
+The next N lines each contain N integers separated by a space.
+
+Output Format:
+The first N lines contain the modified matrix.
+
+Example Input/Output 1:
+Input: 
+5
+88 25 25 75 48
+47 13 78 38 22
+54 93 94 96 82
+61 19 45 15 35
+57 45 92 24 41
+
+Output:
+88 25 25 75 48
+47 13 78 38 22
+54 93 94 96 82
+61 13 78 38 35
+88 25 25 75 48
+
+Explanation: 
+The top-triangle part of the matrix is highlighted below. 
+88 25 25 75 48
+47 13 78 38 22
+54 93 94 96 82
+61 19 45 15 35
+57 45 92 24 41
+After replacing the bottom-triangle part of the matrix by the water image of the top-triangle part of the matrix, the matrix becomes 
+88 25 25 75 48 
+47 13 78 38 22 
+54 93 94 96 82
+61 13 78 38 35
+88 25 25 75 48
+
+Example Input/Output 2:
+Input: 
+7
+35 48 21 78 43 39 57
+31 33 64 84 80 39 97 
+43 69 47 60 33 46 82
+40 89 63 62 84 37 20
+91 36 12 53 42 48 78 
+40 72 59 13 70 24 39
+75 21 17 53 71 13 58
+
+Output:
+35 48 21 78 43 39 57
+31 33 64 84 80 39 97
+43 69 47 60 33 46 82
+40 89 63 62 84 37 20 
+91 36 47 60 33 48 78
+40 33 64 84 80 39 39
+35 48 21 78 43 39 57
+
+----------------------------------------------------------------------------------------------------------------------------------
+
+Program:
+
